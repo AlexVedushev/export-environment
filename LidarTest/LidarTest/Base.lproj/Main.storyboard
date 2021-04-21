@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ce5-FK-mhZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="I50-Bj-u7f">
+            <objects>
+                <viewController id="ce5-FK-mhZ" customClass="ViewController" customModule="LidarTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YcW-KX-ILS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3g-Io-yOW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </arView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22m-kT-Xxa">
+                                <rect key="frame" x="157.5" y="812" width="99" height="30"/>
+                                <state key="normal" title="Simple texture"/>
+                                <connections>
+                                    <action selector="shareFile:" destination="ce5-FK-mhZ" eventType="touchUpInside" id="uGS-3B-SFg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPr-ai-fDM">
+                                <rect key="frame" x="142" y="762" width="130" height="30"/>
+                                <state key="normal" title="Export with texture"/>
+                                <connections>
+                                    <action selector="buttonTouched:" destination="ce5-FK-mhZ" eventType="touchUpInside" id="bmq-Om-OwP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Utb-Oi-hFE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Utb-Oi-hFE" firstAttribute="bottom" secondItem="j3g-Io-yOW" secondAttribute="bottom" id="6AS-QT-Gzk"/>
+                            <constraint firstItem="Utb-Oi-hFE" firstAttribute="bottom" secondItem="22m-kT-Xxa" secondAttribute="bottom" constant="20" id="6dV-ct-4dd"/>
+                            <constraint firstItem="j3g-Io-yOW" firstAttribute="leading" secondItem="Utb-Oi-hFE" secondAttribute="leading" id="MTE-Bi-pvq"/>
+                            <constraint firstItem="22m-kT-Xxa" firstAttribute="top" secondItem="kPr-ai-fDM" secondAttribute="bottom" constant="20" id="RjW-kC-eB6"/>
+                            <constraint firstItem="22m-kT-Xxa" firstAttribute="centerX" secondItem="YcW-KX-ILS" secondAttribute="centerX" id="TES-K5-Ih8"/>
+                            <constraint firstItem="kPr-ai-fDM" firstAttribute="centerX" secondItem="YcW-KX-ILS" secondAttribute="centerX" id="g42-JR-L6y"/>
+                            <constraint firstItem="Utb-Oi-hFE" firstAttribute="trailing" secondItem="j3g-Io-yOW" secondAttribute="trailing" id="he9-KZ-Nhx"/>
+                            <constraint firstItem="j3g-Io-yOW" firstAttribute="top" secondItem="Utb-Oi-hFE" secondAttribute="top" id="iMw-lJ-q6F"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="j3g-Io-yOW" id="Q74-du-M6L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yTO-XU-Fqj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="158"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

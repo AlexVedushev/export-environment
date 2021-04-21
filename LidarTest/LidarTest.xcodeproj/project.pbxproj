@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E003EAC9261208960072FC79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E003EAC8261208960072FC79 /* AppDelegate.swift */; };
+		E003EACB261208960072FC79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E003EACA261208960072FC79 /* ViewController.swift */; };
+		E003EACD261208960072FC79 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = E003EACC261208960072FC79 /* Experience.rcproject */; };
+		E003EAD0261208960072FC79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E003EACE261208960072FC79 /* Main.storyboard */; };
+		E003EAD2261208960072FC79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E003EAD1261208960072FC79 /* Assets.xcassets */; };
+		E003EAD5261208960072FC79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E003EAD3261208960072FC79 /* LaunchScreen.storyboard */; };
+		E003EAE0261227A10072FC79 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E003EADF261227A10072FC79 /* File.swift */; };
+		E02EE4EE261741800063C1B5 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02EE4ED261741800063C1B5 /* Vertex.swift */; };
+		E057CAB626301D9A00913B80 /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = E057CAB526301D9A00913B80 /* Zip */; };
+		E080860326204CB000141C8A /* SimpleObjExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E080860226204CB000141C8A /* SimpleObjExporter.swift */; };
+		E0808606262050A000141C8A /* ViewControllerBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0808605262050A000141C8A /* ViewControllerBackup.swift */; };
+		E0808609262050F300141C8A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0808608262050F300141C8A /* Extensions.swift */; };
+		E080860E2620531F00141C8A /* ObjTextureExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E080860D2620531F00141C8A /* ObjTextureExporter.swift */; };
+		E0C4FEAB2614DF5D006BD1EC /* Unknown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0C4FEA92614DEC9006BD1EC /* Unknown.jpg */; };
+		E0FB70C92615C74400CE71E7 /* wallpapers_15579.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0FB70C82615C74400CE71E7 /* wallpapers_15579.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E003EAC5261208960072FC79 /* LidarTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LidarTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E003EAC8261208960072FC79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E003EACA261208960072FC79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E003EACC261208960072FC79 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
+		E003EACF261208960072FC79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E003EAD1261208960072FC79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E003EAD4261208960072FC79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E003EAD6261208960072FC79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E003EADF261227A10072FC79 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		E02EE4ED261741800063C1B5 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		E080860226204CB000141C8A /* SimpleObjExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleObjExporter.swift; sourceTree = "<group>"; };
+		E0808605262050A000141C8A /* ViewControllerBackup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBackup.swift; sourceTree = "<group>"; };
+		E0808608262050F300141C8A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E080860D2620531F00141C8A /* ObjTextureExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjTextureExporter.swift; sourceTree = "<group>"; };
+		E0C4FEA92614DEC9006BD1EC /* Unknown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Unknown.jpg; sourceTree = "<group>"; };
+		E0FB70C82615C74400CE71E7 /* wallpapers_15579.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpapers_15579.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E003EAC2261208960072FC79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E057CAB626301D9A00913B80 /* Zip in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E003EABC261208960072FC79 = {
+			isa = PBXGroup;
+			children = (
+				E003EAC7261208960072FC79 /* LidarTest */,
+				E003EAC6261208960072FC79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E003EAC6261208960072FC79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E003EAC5261208960072FC79 /* LidarTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E003EAC7261208960072FC79 /* LidarTest */ = {
+			isa = PBXGroup;
+			children = (
+				E080860C2620530400141C8A /* ObjExporter */,
+				E003EAC8261208960072FC79 /* AppDelegate.swift */,
+				E003EACA261208960072FC79 /* ViewController.swift */,
+				E003EACC261208960072FC79 /* Experience.rcproject */,
+				E003EACE261208960072FC79 /* Main.storyboard */,
+				E003EAD1261208960072FC79 /* Assets.xcassets */,
+				E003EAD3261208960072FC79 /* LaunchScreen.storyboard */,
+				E003EAD6261208960072FC79 /* Info.plist */,
+				E003EADF261227A10072FC79 /* File.swift */,
+				E0C4FEA92614DEC9006BD1EC /* Unknown.jpg */,
+				E0FB70C82615C74400CE71E7 /* wallpapers_15579.jpg */,
+				E02EE4ED261741800063C1B5 /* Vertex.swift */,
+				E0808605262050A000141C8A /* ViewControllerBackup.swift */,
+				E0808608262050F300141C8A /* Extensions.swift */,
+			);
+			path = LidarTest;
+			sourceTree = "<group>";
+		};
+		E080860C2620530400141C8A /* ObjExporter */ = {
+			isa = PBXGroup;
+			children = (
+				E080860226204CB000141C8A /* SimpleObjExporter.swift */,
+				E080860D2620531F00141C8A /* ObjTextureExporter.swift */,
+			);
+			path = ObjExporter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E003EAC4261208960072FC79 /* LidarTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E003EAD9261208960072FC79 /* Build configuration list for PBXNativeTarget "LidarTest" */;
+			buildPhases = (
+				E003EAC1261208960072FC79 /* Sources */,
+				E003EAC2261208960072FC79 /* Frameworks */,
+				E003EAC3261208960072FC79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LidarTest;
+			packageProductDependencies = (
+				E057CAB526301D9A00913B80 /* Zip */,
+			);
+			productName = LidarTest;
+			productReference = E003EAC5261208960072FC79 /* LidarTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E003EABD261208960072FC79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					E003EAC4261208960072FC79 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = E003EAC0261208960072FC79 /* Build configuration list for PBXProject "LidarTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E003EABC261208960072FC79;
+			packageReferences = (
+				E057CAB426301D9A00913B80 /* XCRemoteSwiftPackageReference "Zip" */,
+			);
+			productRefGroup = E003EAC6261208960072FC79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E003EAC4261208960072FC79 /* LidarTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E003EAC3261208960072FC79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E003EAD5261208960072FC79 /* LaunchScreen.storyboard in Resources */,
+				E003EAD2261208960072FC79 /* Assets.xcassets in Resources */,
+				E003EAD0261208960072FC79 /* Main.storyboard in Resources */,
+				E0FB70C92615C74400CE71E7 /* wallpapers_15579.jpg in Resources */,
+				E0C4FEAB2614DF5D006BD1EC /* Unknown.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E003EAC1261208960072FC79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E003EACB261208960072FC79 /* ViewController.swift in Sources */,
+				E003EAE0261227A10072FC79 /* File.swift in Sources */,
+				E0808606262050A000141C8A /* ViewControllerBackup.swift in Sources */,
+				E0808609262050F300141C8A /* Extensions.swift in Sources */,
+				E080860326204CB000141C8A /* SimpleObjExporter.swift in Sources */,
+				E080860E2620531F00141C8A /* ObjTextureExporter.swift in Sources */,
+				E003EAC9261208960072FC79 /* AppDelegate.swift in Sources */,
+				E02EE4EE261741800063C1B5 /* Vertex.swift in Sources */,
+				E003EACD261208960072FC79 /* Experience.rcproject in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E003EACE261208960072FC79 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E003EACF261208960072FC79 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E003EAD3261208960072FC79 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E003EAD4261208960072FC79 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E003EAD7261208960072FC79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E003EAD8261208960072FC79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E003EADA261208960072FC79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3U2YRH5U2T;
+				INFOPLIST_FILE = LidarTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alex.LidarTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E003EADB261208960072FC79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3U2YRH5U2T;
+				INFOPLIST_FILE = LidarTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alex.LidarTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E003EAC0261208960072FC79 /* Build configuration list for PBXProject "LidarTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E003EAD7261208960072FC79 /* Debug */,
+				E003EAD8261208960072FC79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E003EAD9261208960072FC79 /* Build configuration list for PBXNativeTarget "LidarTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E003EADA261208960072FC79 /* Debug */,
+				E003EADB261208960072FC79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E057CAB426301D9A00913B80 /* XCRemoteSwiftPackageReference "Zip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/Zip";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E057CAB526301D9A00913B80 /* Zip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E057CAB426301D9A00913B80 /* XCRemoteSwiftPackageReference "Zip" */;
+			productName = Zip;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E003EABD261208960072FC79 /* Project object */;
+}
