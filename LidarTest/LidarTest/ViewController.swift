@@ -91,7 +91,7 @@ class ViewController: UIViewController {
         
         guard
             let jpgRepr = uiimage.jpegData(compressionQuality: 0.5),
-            let filePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("\(name).jpg") else {
+            let filePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("\(name).jpeg") else {
             return nil
         }
         
@@ -113,20 +113,35 @@ class ViewController: UIViewController {
 
 extension ViewController: ARSessionDelegate {
     func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
-        guard let anchors = arView.session.currentFrame?.anchors.compactMap({ $0 as? ARMeshAnchor}) else { return }
-//        anchors.forEach { (anchor) in
-//            let vertices = anchor.geometry.vertices
-//            let modelMatrix = anchor.transform
-//
-//            for i in 0..<vertices.count {
-//                let vertex = anchor.geometry.vertex(at: UInt32(i))
-//                textureCoordinate(vertex, modelMatrix: modelMatrix, camera: arView.session.currentFrame?.camera)
-//            }
-//        }
+        print(#function)
+        guard let currentFrame = arView.session.currentFrame else { return }
+        let anchors = currentFrame.anchors.compactMap({ $0 as? ARMeshAnchor})
+        
+        
+        anchors.forEach { (anchor) in
+            let imageName = UUID().uuidString
+            objTextureExporter.pixelBufferDict[imageName] = currentFrame.capturedImage
+            objTextureExporter.anchorImageNameDict[anchor.identifier.uuidString] = imageName
+        }
     }
 
     func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
+        print(#function)
+        guard let currentFrame = arView.session.currentFrame else { return }
+        let anchors = currentFrame.anchors.compactMap({ $0 as? ARMeshAnchor})
+
+        anchors.forEach { (anchor) in
+            if let imageName = objTextureExporter.anchorImageNameDict[anchor.identifier.uuidString] {
+                objTextureExporter.pixelBufferDict[imageName] = nil
+            }
+        }
         
+
+        anchors.forEach { (anchor) in
+            let newImageName = UUID().uuidString
+            objTextureExporter.pixelBufferDict[newImageName] = currentFrame.capturedImage
+            objTextureExporter.anchorImageNameDict[anchor.identifier.uuidString] = newImageName
+        }
     }
 }
 

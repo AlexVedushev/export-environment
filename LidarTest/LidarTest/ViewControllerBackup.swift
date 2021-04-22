@@ -85,7 +85,7 @@ class ViewControllerBackup: UIViewController {
             let vertexPointer = vertices.buffer.contents()
             let facePointer = faces.buffer.contents()
             
-            var vertexes = [Vertex]()
+            var vertexes = [VertexData1]()
             
             for vtxIndex in 0 ..< vertices.count {
 //                let vertex = geometry.vertex(at: UInt32(vtxIndex))
@@ -101,7 +101,10 @@ class ViewControllerBackup: UIViewController {
                                                               w: 1.0)
                 let textureCoordinate = getTextureCoordinate(vertex, modelMatrix: ma.transform, camera: camera)
                 
-                let vertexData = Vertex(position: [], normal: SIMD3<Float>.zero)
+                let vertexData = VertexData1(position: [],
+                                            normal: SIMD3<Float>.zero
+//                                            uv0: vector_float2.zero
+                )
 //                                        normal: normal,
 //                                        uv0: textureCoordinate)
                 vertexes.append(vertexData)
@@ -121,7 +124,7 @@ class ViewControllerBackup: UIViewController {
 //                                                              deallocator: .none), type: .vertex)
             
             let vertexBuffer = allocator.newBuffer(with: Data(bytesNoCopy: UnsafeMutableRawPointer(mutating: vertexes),
-                                                              count: vertexes.count * MemoryLayout<Vertex>.size,
+                                                              count: vertexes.count * MemoryLayout<VertexData1>.size,
                                                                           deallocator: .none),
                                                    type: .vertex)
             
@@ -166,7 +169,7 @@ class ViewControllerBackup: UIViewController {
 //                                                                offset: offset,
 //                                                                bufferIndex: 0)
             
-            vertexDescriptor.layouts[0] = MDLVertexBufferLayout(stride: MemoryLayout<Vertex>.size)
+            vertexDescriptor.layouts[0] = MDLVertexBufferLayout(stride: MemoryLayout<VertexData1>.size)
             
             let mesh = MDLMesh(vertexBuffer: vertexBuffer,
                                vertexCount: ma.geometry.vertices.count,

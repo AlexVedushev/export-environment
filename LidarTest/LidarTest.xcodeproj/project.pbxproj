@@ -14,7 +14,7 @@
 		E003EAD2261208960072FC79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E003EAD1261208960072FC79 /* Assets.xcassets */; };
 		E003EAD5261208960072FC79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E003EAD3261208960072FC79 /* LaunchScreen.storyboard */; };
 		E003EAE0261227A10072FC79 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E003EADF261227A10072FC79 /* File.swift */; };
-		E02EE4EE261741800063C1B5 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02EE4ED261741800063C1B5 /* Vertex.swift */; };
+		E02EE4EE261741800063C1B5 /* VertexData1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02EE4ED261741800063C1B5 /* VertexData1.swift */; };
 		E057CAB626301D9A00913B80 /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = E057CAB526301D9A00913B80 /* Zip */; };
 		E080860326204CB000141C8A /* SimpleObjExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E080860226204CB000141C8A /* SimpleObjExporter.swift */; };
 		E0808606262050A000141C8A /* ViewControllerBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0808605262050A000141C8A /* ViewControllerBackup.swift */; };
@@ -34,7 +34,7 @@
 		E003EAD4261208960072FC79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E003EAD6261208960072FC79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E003EADF261227A10072FC79 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		E02EE4ED261741800063C1B5 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		E02EE4ED261741800063C1B5 /* VertexData1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertexData1.swift; sourceTree = "<group>"; };
 		E080860226204CB000141C8A /* SimpleObjExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleObjExporter.swift; sourceTree = "<group>"; };
 		E0808605262050A000141C8A /* ViewControllerBackup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBackup.swift; sourceTree = "<group>"; };
 		E0808608262050F300141C8A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 				E003EADF261227A10072FC79 /* File.swift */,
 				E0C4FEA92614DEC9006BD1EC /* Unknown.jpg */,
 				E0FB70C82615C74400CE71E7 /* wallpapers_15579.jpg */,
-				E02EE4ED261741800063C1B5 /* Vertex.swift */,
+				E02EE4ED261741800063C1B5 /* VertexData1.swift */,
 				E0808605262050A000141C8A /* ViewControllerBackup.swift */,
 				E0808608262050F300141C8A /* Extensions.swift */,
 			);
@@ -186,7 +186,7 @@
 				E080860326204CB000141C8A /* SimpleObjExporter.swift in Sources */,
 				E080860E2620531F00141C8A /* ObjTextureExporter.swift in Sources */,
 				E003EAC9261208960072FC79 /* AppDelegate.swift in Sources */,
-				E02EE4EE261741800063C1B5 /* Vertex.swift in Sources */,
+				E02EE4EE261741800063C1B5 /* VertexData1.swift in Sources */,
 				E003EACD261208960072FC79 /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
